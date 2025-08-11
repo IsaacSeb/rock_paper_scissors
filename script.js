@@ -44,6 +44,11 @@ function playRound(humanChoice, computerChoice){
         case humanChoice == "scissors" && computerChoice == "paper":
             console.log("You Win! Scissors beats Paper");
             ++humanScore;
+
+        case humanChoice == "paper" && computerChoice == "scissors":
+            console.log("You Lose! Scissors beat Paper");
+            ++computerScore;
+            break;
     }
 
 }
