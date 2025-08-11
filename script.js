@@ -49,6 +49,10 @@ function playRound(humanChoice, computerChoice){
             console.log("You Lose! Scissors beat Paper");
             ++computerScore;
             break;
+
+        default:
+            console.log(`It's a Draw you both played ${humanChoice}!`);
+            break;
     }
 
 }
