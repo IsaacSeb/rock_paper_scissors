@@ -16,6 +16,9 @@ function getHumanChoice() {
 }
 
 const gameLimit = 5;
+function playGame(){
+    
+}
 let humanScore = 0;
 let computerScore = 0;
 
