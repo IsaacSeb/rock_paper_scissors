@@ -16,8 +16,6 @@ function getHumanChoice() {
 }
 
 function playGame(){
-    
-}
 let humanScore = 0;
 let computerScore = 0;
 
@@ -44,7 +42,9 @@ function playRound(humanChoice, computerChoice){
     } else if (humanChoice == computerChoice) {
         console.log(`It's a Draw! you both played ${humanChoice}`);
     }
+    }
 }
+
 
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
