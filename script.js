@@ -9,3 +9,8 @@ function getComputerChoice(){
         return "scissors"
     }
 }
+
+function getHumanChoice() {
+ const humanChoice = prompt("Please pick ONE of the three choices: rock, paper or scissors ");
+ return humanChoice;
+}
