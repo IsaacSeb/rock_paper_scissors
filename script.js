@@ -38,6 +38,8 @@ function playRound(humanChoice, computerChoice){
     } else if ( humanChoice == "paper" && computerChoice == "scissors"){
         console.log("You Lose! Scissors beat Paper");
         ++computerScore;
+    } else if (humanChoice == computerChoice) {
+        console.log(`It's a Draw! you both played ${humanChoice}`);
     }
 
    
