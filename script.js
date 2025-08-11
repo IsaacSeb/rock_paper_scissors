@@ -29,6 +29,9 @@ function playRound(humanChoice, computerChoice){
     } else if (humanChoice == "rock" && computerChoice == "scissors"){
         console.log("You Win! Rock beats scissors");
         ++humanScore;
+    } else if (humanChoice == "scissors" && computerChoice == "rock"){
+        console.log("You Win! Rock beats Scissors");
+        ++computerScore;
     }
 
    
