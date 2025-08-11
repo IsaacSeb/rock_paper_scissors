@@ -19,10 +19,9 @@ const gameLimit = 5;
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 function playGame(){
-   
-for (let counter = 0; counter < gameLimit; counter++) {
     let humanScore = 0;
     let computerScore = 0;
+for (let counter = 0; counter < gameLimit; counter++) {
     function playRound(humanChoice, computerChoice){
         humanChoice = humanChoice.toLowerCase();
             if (humanChoice == "rock" && computerChoice =="paper"){
