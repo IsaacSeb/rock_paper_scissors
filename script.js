@@ -36,7 +36,10 @@ function playRound(humanChoice, ComputerChoice){
             ++humanScore;
             break;
 
-            
+        case humanChoice == "scissors" && ComputerChoice == "rock":
+            console.log("You Lose! Rock beats Scissors");
+            ++computerScore;
+            break;   
     }
 
 }
