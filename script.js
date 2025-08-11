@@ -43,10 +43,15 @@ function playRound(humanChoice, computerChoice){
         console.log(`It's a Draw! you both played ${humanChoice}`);
     }
     }
-}
-
-
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
-
 playRound(humanSelection, computerSelection);
+}
+
+playGame();
+playGame();
+playGame();
+playGame();
+playGame();
+
+
