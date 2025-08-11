@@ -16,11 +16,14 @@ function getHumanChoice() {
 }
 
 const gameLimit = 5;
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
 function playGame(){
+   
+for (let counter = 0; counter < gameLimit; counter++) {
     let humanScore = 0;
     let computerScore = 0;
-    for (let counter = 0; counter < gameLimit; counter++) {
-        function playRound(humanChoice, computerChoice){
+    function playRound(humanChoice, computerChoice){
         humanChoice = humanChoice.toLowerCase();
             if (humanChoice == "rock" && computerChoice =="paper"){
                 console.log("You Lose! Paper beats Rock");
@@ -43,14 +46,15 @@ function playGame(){
             } else if (humanChoice == computerChoice) {
                 console.log(`It's a Draw! you both played ${humanChoice}`);
             }
-
-   
+        
+        
         }
+        playRound(humanSelection, computerSelection);
+    }
+    if (humanScore > computerScore){
+        console.log(`You Won! you have: ${humanScore} against COM: ${computerScore} `);
     }
 }
 
-
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-playRound(humanSelection, computerSelection);
+playGame();
+// playRound(humanSelection, computerSelection);
