@@ -23,8 +23,13 @@ function playRound(humanChoice, getComputerChoice){
     switch(humanChoice) {
         case humanChoice == "rock" && getComputerChoice == "paper":
             console.log("You Lose! Paper beats Rock");
-            ++humanScore;
+            ++computerScore;
             break;  
+        
+        case humanChoice == "paper" && getComputerChoice == "rock":
+            console.log("You Win! Paper beats Rock");
+            ++humanScore;
+            break;
     }
 
 }
