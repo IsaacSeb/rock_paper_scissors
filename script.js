@@ -19,7 +19,7 @@ let humanScore = 0;
 let computerScore = 0;
 
 function playRound(humanChoice, computerChoice){
-    let humanChoice = humanChoice.toLowerCase();
+    humanChoice = humanChoice.toLowerCase();
     switch(humanChoice) {
         case humanChoice == "rock" && computerChoice == "paper":
             console.log("You Lose! Paper beats Rock");
