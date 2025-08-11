@@ -30,6 +30,13 @@ function playRound(humanChoice, getComputerChoice){
             console.log("You Win! Paper beats Rock");
             ++humanScore;
             break;
+
+        case humanChoice == "rock" && getComputerChoice == "scissors":
+            console.log("You Win! Rock beats Scissors");
+            ++humanScore;
+            break;
+            
+            
     }
 
 }
