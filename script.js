@@ -53,6 +53,8 @@ for (let counter = 0; counter < gameLimit; counter++) {
     }
     if (humanScore > computerScore){
         console.log(`You Won! you have: ${humanScore} against COM: ${computerScore} `);
+    } else if (humanScore == computerScore){
+        console.log(`You drew! you both got: ${humanScore}`)
     }
 }
 
