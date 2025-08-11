@@ -18,24 +18,24 @@ function getHumanChoice() {
 let humanScore = 0;
 let computerScore = 0;
 
-function playRound(humanChoice, getComputerChoice){
+function playRound(humanChoice, ComputerChoice){
     let humanChoice = humanChoice.toLowerCase();
     switch(humanChoice) {
-        case humanChoice == "rock" && getComputerChoice == "paper":
+        case humanChoice == "rock" && ComputerChoice == "paper":
             console.log("You Lose! Paper beats Rock");
             ++computerScore;
             break;  
         
-        case humanChoice == "paper" && getComputerChoice == "rock":
+        case humanChoice == "paper" && ComputerChoice == "rock":
             console.log("You Win! Paper beats Rock");
             ++humanScore;
             break;
 
-        case humanChoice == "rock" && getComputerChoice == "scissors":
+        case humanChoice == "rock" && ComputerChoice == "scissors":
             console.log("You Win! Rock beats Scissors");
             ++humanScore;
             break;
-            
+
             
     }
 
