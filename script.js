@@ -69,9 +69,9 @@ playRound(getHumanChoice(), getComputerChoice());
 playRound(getHumanChoice(), getComputerChoice());
 playRound(getHumanChoice(), getComputerChoice());
 playRound(getHumanChoice(), getComputerChoice());
+getWinner();
 }
 
 playGame();
-getWinner();
 
 
