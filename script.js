@@ -15,9 +15,10 @@ function getHumanChoice() {
  return humanChoice;
 }
 
-function playGame(){
 let humanScore = 0;
 let computerScore = 0;
+function playGame(){
+
 
 function updateHumanScore(points){
     humanScore += points;
@@ -53,7 +54,11 @@ function playRound(humanChoice, computerChoice){
         console.log(`It's a Draw! you both played ${humanChoice}`);
     }
     }
-function getWinner(humanScore, computerScore){
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+playRound(humanSelection, computerSelection);
+}
+function getWinner(){
     if (humanScore > computerScore){
         console.log(`You win! you have: ${humanScore} & the Computer got ${computerScore}`)
     } else if (computerScore > humanScore){
@@ -62,15 +67,12 @@ function getWinner(humanScore, computerScore){
         console.log(`You Drew! you have: ${humanScore} & the Computer got ${computerScore}`)
     }
 }
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-playRound(humanSelection, computerSelection);
-}
 
 playGame();
 playGame();
 playGame();
 playGame();
 playGame();
+getWinner();
 
 
