@@ -33,7 +33,7 @@ function playRound(humanChoice, computerChoice){
     humanChoice = humanChoice.toLowerCase();
     if (humanChoice == "rock" && computerChoice =="paper"){
         console.log("You Lose! Paper beats Rock");
-        ++computerScore;
+        updateComputerScore(1);
     } else if (humanChoice == "paper" &&  computerChoice == "rock"){
         console.log("You Win! Paper beats Rock");
         ++humanScore;
