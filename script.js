@@ -58,6 +58,9 @@ const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 playRound(humanSelection, computerSelection);
 playRound(getHumanChoice(), getComputerChoice());
+playRound(getHumanChoice(), getComputerChoice());
+playRound(getHumanChoice(), getComputerChoice());
+playRound(getHumanChoice(), getComputerChoice());
 }
 function getWinner(){
     if (humanScore > computerScore){
@@ -70,10 +73,10 @@ function getWinner(){
 }
 
 playGame();
-// playGame();
-// playGame();
-// playGame();
-// playGame();
+playGame();
+playGame();
+playGame();
+playGame();
 getWinner();
 
 
