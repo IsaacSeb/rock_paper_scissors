@@ -73,10 +73,6 @@ function getWinner(){
 }
 
 playGame();
-playGame();
-playGame();
-playGame();
-playGame();
 getWinner();
 
 
