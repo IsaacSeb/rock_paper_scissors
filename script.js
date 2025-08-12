@@ -19,6 +19,12 @@ function playGame(){
 let humanScore = 0;
 let computerScore = 0;
 
+function updateHumanScore(points){
+    humanScore += points;
+    return humanScore
+}
+
+
 function playRound(humanChoice, computerChoice){
     humanChoice = humanChoice.toLowerCase();
     if (humanChoice == "rock" && computerChoice =="paper"){
