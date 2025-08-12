@@ -36,16 +36,16 @@ function playRound(humanChoice, computerChoice){
         updateComputerScore(1);
     } else if (humanChoice == "paper" &&  computerChoice == "rock"){
         console.log("You Win! Paper beats Rock");
-        ++humanScore;
+        updateHumanScore(1);
     } else if (humanChoice == "rock" && computerChoice == "scissors"){
         console.log("You Win! Rock beats scissors");
-        ++humanScore;
+        updateHumanScore(1);
     } else if (humanChoice == "scissors" && computerChoice == "rock"){
         console.log("You Lose! Rock beats Scissors");
         updateComputerScore(1);
     } else if (humanChoice == "scissors" && computerChoice == "paper"){
         console.log("You Win! Scissors beat Paper");
-        ++humanScore;
+        updateHumanScore(1);
     } else if ( humanChoice == "paper" && computerChoice == "scissors"){
         console.log("You Lose! Scissors beat Paper");
         updateComputerScore(1);
