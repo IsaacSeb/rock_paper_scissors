@@ -42,13 +42,13 @@ function playRound(humanChoice, computerChoice){
         ++humanScore;
     } else if (humanChoice == "scissors" && computerChoice == "rock"){
         console.log("You Lose! Rock beats Scissors");
-        ++computerScore;
+        updateComputerScore(1);
     } else if (humanChoice == "scissors" && computerChoice == "paper"){
         console.log("You Win! Scissors beat Paper");
         ++humanScore;
     } else if ( humanChoice == "paper" && computerChoice == "scissors"){
         console.log("You Lose! Scissors beat Paper");
-        ++computerScore;
+        updateComputerScore(1);
     } else if (humanChoice == computerChoice) {
         console.log(`It's a Draw! you both played ${humanChoice}`);
     }
