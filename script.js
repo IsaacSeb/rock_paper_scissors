@@ -24,6 +24,10 @@ function updateHumanScore(points){
     return humanScore
 }
 
+function updateComputerScore(points){
+    computerScore += points;
+    return computerScore;
+}
 
 function playRound(humanChoice, computerChoice){
     humanChoice = humanChoice.toLowerCase();
